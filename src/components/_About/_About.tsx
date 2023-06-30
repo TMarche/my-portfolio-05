@@ -38,7 +38,7 @@ function _About({ aboutRef }: { aboutRef: React.RefObject<HTMLDivElement> }) {
                             <h3 className="font-bold mb-2">Languages</h3>
                             <div className="grid grid-cols-3 gap-2">
                                 {skills.languages.map((skill) => (
-                                    <SkillCard skill={skill} />
+                                    <SkillCard key={skill} skill={skill} />
                                 ))}
                             </div>
                         </div>
@@ -48,7 +48,7 @@ function _About({ aboutRef }: { aboutRef: React.RefObject<HTMLDivElement> }) {
                             <h3 className="font-bold mb-2">Technologies</h3>
                             <div className="grid grid-cols-3 gap-2">
                                 {skills.technologies.map((skill) => (
-                                    <SkillCard skill={skill} />
+                                    <SkillCard key={skill} skill={skill} />
                                 ))}
                             </div>
                         </div>
