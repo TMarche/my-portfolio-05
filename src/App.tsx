@@ -1,7 +1,8 @@
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
 import Navigation from "./components/Navigation";
 import "./stars.sass";
 import About from "./components/_About/_About";
+import Projects from "./components/_Projects/_Projects";
 
 function App() {
     const ref = useRef<HTMLDivElement>(null);
@@ -68,14 +69,7 @@ function App() {
             {/* About */}
             <About aboutRef={aboutRef} />
             {/* Projects */}
-            <div className="relative min-h-screen">
-                {/* Projects Scroll Target */}
-                <div
-                    ref={projectsRef}
-                    className="absolute -top-14 h-14 w-full"
-                ></div>
-                <div className="absolute top-0 left-0 h-full w-full"></div>
-            </div>
+            <Projects projectsRef={projectsRef} />
             {/* Contact */}
             <div className="relative min-h-[80vh]">
                 {/* Contact Scroll Target */}
