@@ -32,21 +32,20 @@ function App() {
                 id="star-container"
                 className="relative min-h-screen flex flex-row justify-center items-center"
             >
-                <div className="relative">
-                    <div
-                        className="flex flex-col gap-5 text-white drop-shadow-lg
-                        border-2 p-8 rounded-lg bg-white bg-opacity-10 font-roboto-slab
+                <div
+                    className="z-10 flex flex-col gap-5 text-white drop-shadow
+                        border-2 border-white p-8 rounded-lg bg-white bg-opacity-10
+                        font-roboto-slab backdrop-blur border-opacity-30
                     "
-                    >
-                        <div className="text-5xl">
-                            Hi, my name is{" "}
-                            <span className="font-bold text-teal-300">
-                                Troy Marchesseault.
-                            </span>
-                        </div>
-                        <div className="text-5xl">
-                            I'm a full-stack web developer.
-                        </div>
+                >
+                    <div className="text-5xl">
+                        Hi, my name is{" "}
+                        <span className="font-bold text-teal-300">
+                            Troy Marchesseault.
+                        </span>
+                    </div>
+                    <div className="text-5xl">
+                        I'm a full-stack web developer.
                     </div>
                 </div>
                 <div id="stars" className="absolute top-0 left-0 h-full" />
@@ -54,7 +53,7 @@ function App() {
                 <div id="stars3" className="absolute top-0 left-0 h-full" />
             </div>
             {/* About */}
-            <div className="relative min-h-[50vh]">
+            <div className="relative min-h-[80vh]">
                 {/* About Scroll Target */}
                 <div
                     ref={aboutRef}
@@ -72,7 +71,7 @@ function App() {
                 <div className="absolute top-0 left-0 h-full w-full"></div>
             </div>
             {/* Contact */}
-            <div className="relative min-h-[50vh]">
+            <div className="relative min-h-[80vh]">
                 {/* Contact Scroll Target */}
                 <div
                     ref={contactRef}

@@ -14,7 +14,7 @@ function Navigation({
     return (
         <div
             className="fixed bg-white bg-opacity-10 z-50 w-full flex flex-row justify-between h-14
-            backdrop-blur text-white"
+            backdrop-blur text-white border-b-2 border-white border-opacity-30 drop-shadow"
         >
             <div className="h-full pl-8 flex flex-row justify-center items-center">
                 <div>Troy Marchesseault</div>
