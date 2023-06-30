@@ -52,7 +52,7 @@ function ProjectCard({
                 <h3 className="text-3xl font-roboto-slab mb-4">
                     {project.name}
                 </h3>
-                <div className="flex flex-row gap-2 mb-4">
+                <div className="flex flex-row flex-wrap gap-2 mb-4">
                     {project.skills.map((skill) => (
                         <div
                             key={skill}

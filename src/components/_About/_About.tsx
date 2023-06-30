@@ -26,11 +26,9 @@ function _About({ aboutRef }: { aboutRef: React.RefObject<HTMLDivElement> }) {
             {/* About Content */}
             <div className="w-full max-w-[1144px]">
                 <h2 className="text-5xl font-roboto-slab mb-6">About</h2>
-                <p className="text-3xl mb-2">
-                    I'm a passionate web developer based in Cary, North
-                    Carolina.
+                <p className="text-3xl mb-8">
+                    I'm a passionate web developer that loves to build things.
                 </p>
-                <p className="text-3xl mb-8">I love to build things.</p>
                 <p className="text-3xl mb-8">Check out my skills:</p>
                 <div className="flex flex-row gap-2">
                     <div className="flex-1 flex flex-row justify-center items-center">

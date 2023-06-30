@@ -8,15 +8,15 @@ function _Projects({
 }) {
     return (
         <section
-            className="relative backdrop-blur-xl flex flex-col items-center py-20
+            className="relative flex flex-col items-center py-20
         "
         >
             {/* About Scroll Target */}
             <div ref={projectsRef} className="absolute -top-14 h-14 w-full" />
             {/* About Content */}
             <div className="w-full max-w-[1144px]">
-                <h2 className="text-5xl font-roboto-slab mb-6">Projects</h2>
-                <div className="flex flex-col gap-8">
+                <h2 className="text-5xl font-roboto-slab mb-14">Projects</h2>
+                <div className="flex flex-col gap-28">
                     {PROJECTS.map((project, i) => (
                         <ProjectCard
                             key={project.name}
